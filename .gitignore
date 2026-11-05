@@ -19,7 +19,8 @@ HELP.md
 *.iml
 *.iws
 *.ipr
-out/
+# Con "/" al inicio solo ignora la carpeta de la raíz; sin ella ignoraría también ports/out y adapters/out
+/out/
 
 # --- Eclipse / STS ---
 .apt_generated
@@ -29,7 +30,7 @@ out/
 .settings/
 .springBeans
 .sts4-cache
-bin/
+/bin/
 
 # --- VS Code ---
 .vscode/*
