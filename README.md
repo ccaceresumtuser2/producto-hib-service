@@ -122,6 +122,8 @@ Requisitos: Java 21 y PostgreSQL con la base `topicos_db` (ver `src/main/resourc
 
 El workflow [`.github/workflows/ci.yml`](.github/workflows/ci.yml) corre `./mvnw verify` (las 30 pruebas, incluidas las de arquitectura y persistencia) en cada push a `main`/`master`, en cada pull request o a mano desde la pestaña *Actions*. Las pruebas usan la base PostgreSQL de **Render**.
 
+Explicación paso a paso y lo que falta para desplegar: [`docs/ci.md`](docs/ci.md).
+
 Las credenciales **no** van en el repositorio. Créalas en *Settings → Secrets and variables → Actions → New repository secret*:
 
 | Secret | Valor |
